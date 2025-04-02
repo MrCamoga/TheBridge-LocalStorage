@@ -47,7 +47,7 @@ function printData(append) {
 	}
 }
 
-function deleteData(event) {
+function deleteData() {
 	localStorage.removeItem("userdata");
 	document.getElementById("datos").innerHTML = "";
 }
