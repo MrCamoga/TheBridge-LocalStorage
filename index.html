@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form onsubmit="submitForm(this,event)" onreset="deleteData(event)">
+            <div>
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" name="name" placeholder="Nombre">
+            </div>
+            <div>
+                <label for="name">Email: </label>
+                <input type="text" id="email" name="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="name">Mensaje: </label>
+                <textarea id="msg" name="msg" placeholder="Mensaje"></textarea>
+            </div>
+            <div>
+                <label for="name">URL Imagen:</label>
+                <input type="url" id="url" name="url" placeholder="URL">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar datos">
+            </div>
+        </form>
+        <div id="datos">
+
+        </div>
+    </body>
+</html>
